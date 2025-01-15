@@ -10,6 +10,7 @@
 @import "./sections/contact";
 @import "./sections/hero";
 @import "./sections/projects";
+@import "./sections/certifications";
 * {
     padding: 0;
     margin: 0;
@@ -544,6 +545,49 @@ p {
 }
 /*End contact Section */
 
+/* certifications Section */
+#certifications .certifications {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#certifications .certifications-items {
+    width: 400px;
+}
+#certifications .certifications-item {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: .3s ease box-shadow;
+}
+#certifications .certifications-item:hover {
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#certifications .icon {
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#certifications .certifications-info h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#certifications .certifications-info h2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+/*End certifications Section */
+
 /* Footer */
 #footer {
     background-color: #0a2148;
@@ -687,6 +731,43 @@ p {
     }
     /* End About */
 
+    /* certifications  */
+    #certifications .certifications {
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+        margin-top: -150px;
+    }
+    #certifications .certifications-items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+    #certifications .certifications-item {
+        width: 30%;
+        margin: 10px;
+        flex-direction: row;
+        background-color: #0a2148;
+        color: white;
+    }
+    #certifications .certifications-item .icon {
+        height: 100px;
+        width: 100px;
+    }
+    #certifications .certifications-item .icon img {
+        object-fit: contain;
+    }
+    #certifications .certifications-item .certifications-info {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+    /* End certifications  */
+
     /* contact  */
     #contact .contact {
         flex-direction: column;
@@ -743,7 +824,7 @@ p {
         display: inline-block;
     }
     #header .nav-list ul li a {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     #header .nav-list ul a:after {
         display: none;
